@@ -1,9 +1,3 @@
 <template>
-  <Tutorial/>
+  <h1>HEllo nuxt!</h1>
 </template>
-
-<script>
-export default {
-  name: 'IndexPage'
-}
-</script>
