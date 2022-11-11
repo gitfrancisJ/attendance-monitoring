@@ -1,7 +1,9 @@
 <template>
     <footer class="p-4 bg-white sm:p-6 bg-slate-100">
         <div class="flex items-center justify-center">
-            <Logo />
+            <div class="h-10 w-40">
+                <Logo />
+            </div>
         </div>
         <hr class="border-gray-200 dark:border-gray-700">
         <div class="flex items-center justify-center">
