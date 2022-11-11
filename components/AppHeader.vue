@@ -1,34 +1,34 @@
 <template>
-    <nav class="flex items-center justify-between flex-wrap bg-teal-500 p-6">
-      <div class="flex text-white mr-6">
-        <div class="h-10 w-40 pt-2">
-          <Logo />
-        </div>
+  <nav class="flex items-center justify-between flex-wrap bg-teal-500 p-6">
+    <div class="flex text-white mr-6">
+      <div class="h-10 w-40 pt-2">
+        <Logo />
       </div>
-      <div class="block lg:hidden">
-        <button @click="showMenu()" class="flex items-center px-3 py-2 border rounded text-teal-200 border-teal-400 hover:text-white hover:border-white">
-          <svg class="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Menu</title><path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"/></svg>
-        </button>
+    </div>
+    <div class="block lg:hidden">
+      <button @click="showMenu()" class="flex items-center px-3 py-2 border rounded text-teal-200 border-teal-400 hover:text-white hover:border-white">
+        <svg class="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Menu</title><path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"/></svg>
+      </button>
+    </div>
+    <div class="hidden w-full block flex-grow lg:flex lg:items-center lg:w-auto z-{2} " id="menu">
+      <div class="text-sm lg:flex-grow">
+        <Menu>
+          <menu-item
+            v-for="item in navigations"
+            :key="item.id"
+            :item="item"
+            :id="item.href"
+            >
+          </menu-item>
+        </Menu>
+      </div> 
+      <div>
+        <nuxt-link to="about" class="inline-block text-sm px-4 py-2 leading-none border rounded text-white border-white hover:border-transparent hover:text-teal-500 hover:bg-white mt-4 lg:mt-0">
+          Logout               
+        </nuxt-link>
       </div>
-      <div class="hidden w-full block flex-grow lg:flex lg:items-center lg:w-auto z-{2} " id="menu">
-        <div class="text-sm lg:flex-grow">
-          <Menu>
-            <menu-item
-              v-for="item in navigations"
-              :key="item.id"
-              :item="item"
-              :id="item.href"
-              >
-            </menu-item>
-          </Menu>
-        </div> 
-        <div>
-          <nuxt-link to="about" class="inline-block text-sm px-4 py-2 leading-none border rounded text-white border-white hover:border-transparent hover:text-teal-500 hover:bg-white mt-4 lg:mt-0">
-            Logout               
-          </nuxt-link>
-        </div>
-      </div>
-</nav>
+    </div>
+  </nav>
 </template>
 <script>
 export default {
