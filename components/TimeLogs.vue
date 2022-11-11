@@ -25,7 +25,7 @@
                     <option value="4">Afternoon Break</option>
                     <option value="5">Logout</option>
                     </select>
-                    <button class="hover:text-teal-500">Submit</button>
+                    <button class="leading-none border rounded text-white border-white hover:border-transparent bg-teal-500 text-sm p-2 ">Submit</button>
                 </div>
             </div>
         </form>
