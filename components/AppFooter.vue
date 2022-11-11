@@ -5,7 +5,7 @@
         </div>
         <hr class="border-gray-200 dark:border-gray-700">
         <div class="flex items-center justify-center">
-            <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2022 DreamArchers. All Rights Reserved.
+            <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400 pt-3">© 2022 DreamArchers. All Rights Reserved.
             </span>
         </div>
     </footer>
