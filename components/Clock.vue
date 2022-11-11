@@ -32,7 +32,7 @@ export default {
         const dayToday = ['SUN', 'MON', 'TUE', 'WED', 'THU', 'FRI', 'SAT'];
         const monthToday = ['JAN','FEB', 'MARCH', 'APRIL', 'MAY', 'JUN', 'JUL', 'AUG', 'SEP', 'OCT', 'NOV', 'DEC'];
         const today = new Date();
-        const time = today.getHours() + ":" + (today.getMinutes() < 10 ? '0' : '') + today.getMinutes() + ":" + (today.getSeconds()<10?'0':'') + today.getSeconds();
+        const time = (today.getHours() < 10 ? '0' : '') + today.getHours() + ":" + (today.getMinutes() < 10 ? '0' : '') + today.getMinutes() + ":" + (today.getSeconds()<10?'0':'') + today.getSeconds();
         const day = today.getDay();
         const thisMonth = today.getMonth();
         this.currentMonth = monthToday[thisMonth];
