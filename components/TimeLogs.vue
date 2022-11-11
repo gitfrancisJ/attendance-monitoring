@@ -25,20 +25,6 @@
                     <option value="4">Afternoon Break</option>
                     <option value="5">Logout</option>
                     </select>
-                    <!-- <div>
-                        <h2>Remarks:</h2>
-                        <input class="block
-                    w-full
-                    px-2
-                    py-1
-                    text-sm
-                    font-normal
-                    text-gray-700
-                    bg-white bg-clip-padding bg-no-repeat
-                    border border-solid border-gray-300
-                    rounded
-                    focus:text-gray-700 focus:bg-white focus:border-teal-500 focus:outline-none" type="text">
-                    </div> -->
                     <button class="hover:text-teal-500">Submit</button>
                 </div>
             </div>
