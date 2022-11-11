@@ -1,5 +1,5 @@
 <template>
-    <div class="logo">
+    <div class="logo h-10 w-40 ">
       <nuxt-link to="/">
         <img :src=this.src />
       </nuxt-link>
