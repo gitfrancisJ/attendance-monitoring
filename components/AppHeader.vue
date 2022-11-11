@@ -1,7 +1,7 @@
 <template>
   <nav class="flex items-center justify-between flex-wrap bg-teal-500 p-6">
     <div class="flex text-white mr-6">
-      <div class="pt-2">
+      <div class="h-10 w-40 pt-2">
         <Logo />
       </div>
     </div>
