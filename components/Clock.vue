@@ -1,5 +1,5 @@
 <template>
-    <div class="flex flex-row gap-2">
+    <div class="flex flex-row gap-2 text-gray-700">
       <h1>{{ currentDay }} -</h1>
       <h1>{{ currentMonth }}</h1>
       <h1>{{ currentDate }},</h1>
@@ -7,7 +7,6 @@
       <h1>{{ currentTime }}</h1>
     </div>
   </template>
-  
 <script>
 export default {
 
@@ -33,7 +32,7 @@ export default {
         const dayToday = ['SUN', 'MON', 'TUE', 'WED', 'THU', 'FRI', 'SAT'];
         const monthToday = ['JAN','FEB', 'MARCH', 'APRIL', 'MAY', 'JUN', 'JUL', 'AUG', 'SEP', 'OCT', 'NOV', 'DEC'];
         const today = new Date();
-        const time = today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds();
+        const time = today.getHours() + ":" + (today.getMinutes() < 10 ? '0' : '') + today.getMinutes() + ":" + (today.getSeconds()<10?'0':'') + today.getSeconds();
         const day = today.getDay();
         const thisMonth = today.getMonth();
         this.currentMonth = monthToday[thisMonth];
