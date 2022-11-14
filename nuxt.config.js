@@ -40,6 +40,31 @@ export default {
 
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
+    [
+      '@nuxtjs/firebase',
+      {
+        config: {
+          apiKey: "AIzaSyCbw1lCVNwT4JyMcl1G8r7Ib7mi1m1idVw",
+          authDomain: "attendance-monitoring-28df0.firebaseapp.com",
+          projectId: "attendance-monitoring-28df0",
+          storageBucket: "attendance-monitoring-28df0.appspot.com",
+          messagingSenderId: "412895964326",
+          appId: "1:412895964326:web:d581f1eab3c4d431a31867"
+        },
+        services: {
+          auth: {
+            persistence: "local", 
+            initialize: {
+              onAuthStateChangedMutation: "ON_AUTH_STATE_CHANGED_MUTATION",
+              onAuthStateChangedAction: "onAuthStateChangedAction",
+              subscribeManually: false
+            },
+            ssr: false 
+          }, 
+          firestore: true,
+        }
+      }
+    ]
   ],
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
