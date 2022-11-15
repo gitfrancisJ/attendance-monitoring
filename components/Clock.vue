@@ -28,6 +28,7 @@ export default {
   },
 
   methods: {
+    
     getTime() {
         const dayToday = ['SUN', 'MON', 'TUE', 'WED', 'THU', 'FRI', 'SAT'];
         const monthToday = ['JAN','FEB', 'MARCH', 'APRIL', 'MAY', 'JUN', 'JUL', 'AUG', 'SEP', 'OCT', 'NOV', 'DEC'];
