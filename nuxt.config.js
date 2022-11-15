@@ -44,12 +44,12 @@ export default {
       '@nuxtjs/firebase',
       {
         config: {
-          apiKey: "AIzaSyCbw1lCVNwT4JyMcl1G8r7Ib7mi1m1idVw",
-          authDomain: "attendance-monitoring-28df0.firebaseapp.com",
-          projectId: "attendance-monitoring-28df0",
-          storageBucket: "attendance-monitoring-28df0.appspot.com",
-          messagingSenderId: "412895964326",
-          appId: "1:412895964326:web:d581f1eab3c4d431a31867"
+          apiKey: "AIzaSyDrV3lwA9n5dB1fzLrn2AM8uVJYLmiHP74",
+          authDomain: "attendance-monitoring-2696e.firebaseapp.com",
+          projectId: "attendance-monitoring-2696e",
+          storageBucket: "attendance-monitoring-2696e.appspot.com",
+          messagingSenderId: "708805333121",
+          appId: "1:708805333121:web:4157a45a4d638ef7323d80"
         },
         services: {
           auth: {
