@@ -1,6 +1,6 @@
 <template>
   <div>
-   <button class="w-full bg-teal-500 text-sm p-2 text-white rounded" @click.prevent='onClick(btn.method)' >
+   <button class="w-full bg-teal-500 text-sm p-2 text-white rounded" :class="btn.class" @click.prevent='invokeFunc(btn.method)' >
     {{btn.label}}
    </button>
   </div>
@@ -15,17 +15,11 @@ export default {
     }
   },
 
-  data() {
-    return {
-      userCheckedIn: false,
-    }
-  },
-
   methods: {
-
+  
     ...mapActions(['checkedUser']),
 
-    onClick(methodName) {
+    invokeFunc(methodName) {
           this[methodName]();
         }
   }
