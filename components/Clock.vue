@@ -1,5 +1,5 @@
 <template>
-    <div class="flex flex-row gap-2 text-gray-700">
+    <div class="flex flex-row gap-2 text-white">
       <h1>{{ currentDay }} -</h1>
       <h1>{{ currentMonth }}</h1>
       <h1>{{ currentDate }},</h1>
