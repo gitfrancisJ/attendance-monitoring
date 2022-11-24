@@ -3,19 +3,19 @@
     <form>
       <div class="flex justify-center">
         <div class="mb-3 lg:w-96 flex flex-col justify-center gap-4 ">
-          <AppButton v-show = "!userCheckedIn" v-for="data in userCheckedAction" :key="data.id" :btn="data" />
-          <AppButton v-show = "userCheckedIn" v-for="data in userActions" :key="data.id" :btn="data" />
+          <AppButton v-show = "isCheckIn" v-for="data in userCheckedAction" :key="data.id" :btn="data" />
+          <AppButton v-show = "!isCheckIn" v-for="data in userActions" :key="data.id" :btn="data" />
         </div>
       </div>
     </form>
   </div>
 </template>
 <script>
+import { mapGetters } from 'vuex';
 export default {
+
   data() {
     return {
-
-      userCheckedIn: false,
 
       userCheckedAction: [
         {
@@ -51,5 +51,9 @@ export default {
       ]
     }
   },
+
+  computed: {
+    ...mapGetters(['isCheckIn'])
+  }
 }
 </script>
